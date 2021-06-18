@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Care4Earth</string>
+    <string-array name="Location">
+        <item>Bangalore</item>
+        <item>Mumbai</item>
+        <item>kolkata</item>
+        <item>Delhi</item>
+    </string-array>
+
+    <string-array name="ProductCondition">
+        <item>Working</item>
+        <item>Non Working</item>
+    </string-array>
+</resources>

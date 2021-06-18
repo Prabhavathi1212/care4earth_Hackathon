@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/lightpickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Pickup(via 2 wheeler)"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        />
+
+        <TextView
+            android:id="@+id/threekgtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upto 3 kg"
+            android:layout_below="@+id/lightpickup"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:id="@+id/samedaypickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Same day Pickup"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/threekgtext"
+            android:layout_marginLeft="60dp"/>
+
+
+        <RadioButton
+            android:id="@+id/MediumPick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/samedaypickup"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Medium to heavy Pickup"/>
+
+        <TextView
+            android:id="@+id/tenkg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4-10 kg"
+            android:layout_below="@+id/MediumPick"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:id="@+id/samedaypickup_or_nextday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Same day/Next Day pickup"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tenkg"
+            android:layout_marginLeft="60dp"/>
+
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_below="@+id/samedaypickup_or_nextday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_below="@+id/samedaypickup_or_nextday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/back" />
+
+    </RelativeLayout>
+
+</ScrollView>

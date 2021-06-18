@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/firstlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Reclycle/Donate"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy/sell"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectlocation"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/firstlayer"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        android:text="Select your location"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_below="@+id/selectlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/Location"/>
+
+    <TextView
+    android:id="@+id/categories"
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/spinner1"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="40dp"
+    android:textColor="#000000"
+    android:text="Categories"
+    android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/images"
+        android:layout_below="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/clothes" />
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_marginTop="20dp"
+            android:layout_width="120dp"
+            android:src="@drawable/toys"
+            android:layout_height="100dp"/>
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_marginTop="20dp"
+            android:layout_width="120dp"
+            android:src="@drawable/baby_gear"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_grp"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/clothes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Clothes"/>
+        <RadioButton
+            android:id="@+id/toys"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Toys"/>
+        <RadioButton
+            android:id="@+id/babygear"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Baby Gear"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+<TextView
+    android:id="@+id/itemoldtext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/radioButton"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="40dp"
+    android:textColor="#000000"
+    android:text="How old is the item"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemduration"
+            android:layout_below="@+id/itemoldtext"
+            android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radioButtonVertical1"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Less than 1 year old"/>
+    <RadioButton
+        android:id="@+id/radioButtonVertical2"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/radioButtonVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 to less than 5 years"/>
+    <RadioButton
+        android:id="@+id/radioButtonVertical3"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/radioButtonVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 years or more"/>
+
+        </RadioGroup>
+
+<LinearLayout
+    android:layout_below="@+id/itemduration"
+    android:id="@+id/productcondition"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Condition"
+        android:layout_marginLeft="40dp"
+        android:textColor="#00bfff"/>
+
+    <Spinner
+        android:id="@+id/item_working_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:entries="@array/ProductCondition"
+        />
+</LinearLayout>
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Describe product details in less than 50 words"
+        android:layout_below="@+id/productcondition"/>
+
+        <TextView
+            android:id="@+id/Pick_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick One Option to Proceed"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/edittext"
+            android:textColor="#00bfff"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itempickup"
+            android:layout_below="@+id/Pick_option"
+            android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/doorstep"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:text="Pick Up from Doorstep(Chargeble)"/>
+
+        <RadioButton
+            android:layout_below="@+id/doorstep"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/dropyourself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop yourself(Free)"/>
+
+        </RadioGroup>
+
+</RelativeLayout>
+</ScrollView>

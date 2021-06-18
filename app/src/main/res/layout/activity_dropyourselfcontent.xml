@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dropaddress"
+            android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Maranatha Harvest Mission Orphanage Society 4.4  (17) · Orphanage
+Mumbai, Maharashtra · 022 2527 1487
+Open ⋅ Closes 6:30PM"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/radioButton1"
+            android:text="Sushanti Children Home (Jesudas Wilson Charitable Trust)4.4
+ (26) · Non-profit organization
+Karnataka · 080509 60142
+Closes soon ⋅ 5:30PM"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/radioButton2"
+            android:text="Felicia Kids Home (New Building) 5.0 (4) · Orphanage Karnataka"/>
+        </RadioGroup>
+    </RelativeLayout>
+</ScrollView>
